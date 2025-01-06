@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: lime;
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+   color: red;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.guide, .music-player, .breathing-exercise, .optical-simulation {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#optical-animation {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #ff0000, #ff7e00, #fffb00, #00ff00, #0000ff, #ff00ff);
+  animation: passion-pulse 5s infinite ease-in-out;
+  border-radius: 50px; /* স্ফীত আকৃতি */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* গভীর ছায়া */
+}
+
+@keyframes passion-pulse {
+  0% {
+    transform: scale(1); /* প্রাথমিক আকার */
+    background: linear-gradient(90deg, #ff0000, #ff7e00, #fffb00, #00ff00, #0000ff, #ff00ff);
+  }
+  25% {
+    transform: scale(1.05); /* ধীরে ধীরে বেড়ে যাওয়া */
+    background: linear-gradient(90deg, #ff7e00, #fffb00, #00ff00, #0000ff, #ff00ff, #ff0000);
+  }
+  50% {
+    transform: scale(1.1); /* আরও বৃদ্ধি */
+    background: linear-gradient(90deg, #fffb00, #00ff00, #0000ff, #ff00ff, #ff0000, #ff7e00);
+  }
+  75% {
+    transform: scale(1.05); /* আবার ছোট হওয়া */
+    background: linear-gradient(90deg, #00ff00, #0000ff, #ff00ff, #ff0000, #ff7e00, #fffb00);
+  }
+  100% {
+    transform: scale(1); /* প্রাথমিক আকারে ফিরে আসা */
+    background: linear-gradient(90deg, #ff0000, #ff7e00, #fffb00, #00ff00, #0000ff, #ff00ff);
+  }
+}
